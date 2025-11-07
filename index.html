@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/output.css">
+    <title>DevHouse</title>
+</head>
+<body class="md:flex font-poppins">
+    <ul class=" bg-white text-center pt-5 text-2xl text-slate-600 absolute z-50 top-3 left-0 right-0 md:hidden cursor-pointer" id="btn"> X
+                <li class="text-left h-fit mx-5 my-4 text-sm w-9/10 hover:bg-slate-100"><a href="#" class="w-fullblock py-2">Aluguel</a></li>
+                <li class="text-left h-fit mx-5 my-4 text-sm w-9/10 hover:bg-slate-100"><a href="#" class="w-fullblock py-2">Comprar</a></li>
+                <li class="text-left h-fit mx-5 my-4 text-sm w-9/10 hover:bg-slate-100"><a href="#" class="w-fullblock py-2">Serviços</a></li>
+                <li class="text-left h-fit mx-5 my-4 text-sm w-9/10 hover:bg-slate-100"><a href="#" class="w-fullblock py-2">Contatos</a></li>
+    </ul>
+    <nav class="flex-2 max-w-3xs h-dvh sticky left-0 top-0 px-2 py-6 2xl:px-10 hidden border-2 border-slate-200 md:flex md:flex-col">
+        <h1 class="text-3xl font-bold text-rose-500">DevHouse</h1>
+        <ul class="my-4 ml-1 flex flex-col gap-4 text-slate-600">
+            <li><a href="#" class="hover:border-b-2 border-stone-400">Aluguel</a></li>
+            <li><a href="#" class="hover:border-b-2 border-stone-400">Comprar</a></li>
+            <li><a href="#" class="hover:border-b-2 border-stone-400">Serviços</a></li>
+            <li><a href="#" class="hover:border-b-2 border-stone-400">Contatos</a></li>
+        </ul>
+    </nav>
+    <div class="flex-9">
+    <header class="flex p-4 justify-between 2xl:px-20 items-center m-auto sticky top-0 z-30 md:max-w-full bg-white">
+        <div class="bg-slate-100 p-2 flex justify-between items-center gap-6 w-9/12 rounded-lg md:max-w-md">
+            <ion-icon name="search" class="ml-2 text-xl shrink-0"></ion-icon>
+            <input type="text" placeholder="Procurando um apartamento?" class="flex-1 placeholder:text-xs md:placeholder:text-lg">
+        </div>
+        <ion-icon name="person" class="text-xl bg-rose-500 text-white p-1.5 rounded-lg cursor-pointer md:hidden"></ion-icon>
+        <ion-icon name="menu" class="text-4xl cursor-pointer md:hidden" id="menu"></ion-icon>    
+        <div class="hidden md:flex justify-center items-center gap-3">
+            <ion-icon name="heart" class="text-xl bg-slate-100 text-slate-700 p-2 rounded-full cursor-pointer"></ion-icon>
+            <a href="#" class="bg-rose-500 px-3 py-0.5 text-white rounded-md whitespace-nowrap hover:bg-rose-700">Sign in</a>
+        </div>
+    </header>
+    
+    <main class="bg-slate-200 p-4">
+        <h1 class="text-3xl font-bold mb-8">Compre ou alugue</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/1.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Florianópolis - SC</p>
+            <h2 class="my-2 font-bold">Apartamento de Luxo</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/2.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Blumenau - SC</p>
+            <h2 class="my-2 font-bold">Apartamento Nobre</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/3.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Itajaí - SC</p>
+            <h2 class="my-2 font-bold">Ap. no Centro</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/4.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Jaraguá do Sul - SC</p>
+            <h2 class="my-2 font-bold">Ap. de Luxo em Bairro nobre</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/1.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Guaramirim - SC</p>
+            <h2 class="my-2 font-bold">Ap. no Centro de Guaramirim</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/5.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Schroeder - SC</p>
+            <h2 class="my-2 font-bold">Casa retirada em SC</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/6.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Navegantes - SC</p>
+            <h2 class="my-2 font-bold">Ap. De Luxo</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/1.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Joinville - SC</p>
+            <h2 class="my-2 font-bold">Apartamento - Jardim Paraíso</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/3.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Florianópolis - SC</p>
+            <h2 class="my-2 font-bold">Apartamento - Maikera House</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/5.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Florianópolis - SC</p>
+            <h2 class="my-2 font-bold">Apto a Beira-Mar</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/4.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Joinville - SC</p>
+            <h2 class="my-2 font-bold">Apartamento Nobre em Joinville</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/1.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Treze Tílias - SC</p>
+            <h2 class="my-2 font-bold">Casa no Centro de Treze Tílias</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        <article class="bg-white p-2 rounded-lg relative flex flex-col ">
+            <img src="assets/2.jpg" alt="" class="w-full flex-1">
+            <p class="absolute top-1/30 left-1/30 bg-white opacity-80 text-sm px-4 py-0.5 rounded-full flex justify-center items-center gap-1"><ion-icon name="map"></ion-icon>Florianópolis - SC</p>
+            <h2 class="my-2 font-bold">Apê a Beira-mar</h2>
+            <p class="text-stone-500 text-xs"><s>R$ 3000,00/mês</s></p>
+            <p class="text-lg my-1 font-medium text-indigo-500">R$ 2400,00/mês</p>
+            <p class="mt3 mb-2 text-xs font-bold">100 mts - 2 quartos - 1 banheiro</p>
+        </article>
+        </div>
+    </main>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</body>
+</html>

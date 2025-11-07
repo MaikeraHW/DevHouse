@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme{
+    --font-poppins: "poppins";
+    --animate-showing: showing 300ms ease-out forwards;
+}
+
+ @keyframes showing {
+      0% {
+        transform: translateY(0); /* Start completely scaled down */
+        opacity: 0; /* Optional: Start invisible */
+      }
+      100% {
+        transform: translateY(1); /* End at normal size */
+        opacity: 1;
+      }
+    }
